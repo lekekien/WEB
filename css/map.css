@@ -4,7 +4,8 @@ body {
 
 header.map-header {
     padding: 20px 30px;
-    background: url('../images/trangbando/logo_app_bg-index2.png') no-repeat center right;
+    /* background: url('../images/trangbando/logo_app_bg-index2.png') no-repeat center right; */
+    background: #cfdcff;
     margin-bottom: 30px;
 }
 
