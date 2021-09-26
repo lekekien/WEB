@@ -87,6 +87,13 @@ header.map-header .list-menu ul li a.active {
     cursor: pointer;
 }
 
+.list-button li select {
+    padding: 5px;
+    width: 300px;
+    background: #4d4b4bd9;
+    color: #fff;
+}
+
 .map-popup {
     position: absolute;
     top: 200px;
@@ -130,4 +137,106 @@ header.map-header .list-menu ul li a.active {
     background: darkblue;
     color: #fff;
     border: none
+}
+
+.wrapper-page {
+    padding: 40px
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border: 1px solid #e9ecef
+}
+
+.table th,
+.table td {
+    border: 1px solid #e9ecef;
+    padding: .55rem;
+}
+
+.table th {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.relative-popup {
+    position: relative;
+}
+
+.table-popup {
+    position: absolute;
+    top: 100%;
+    left: -110px;
+    /* width: 600px; */
+    border: 1px solid #333;
+    background: #dfdfdf;
+    display: none;
+}
+
+.table-popup.show {
+    display: block;
+    z-index: 9999;
+}
+
+.table-popup th {
+    background: darkblue;
+    color: #fff;
+    border: 1px solid #333
+}
+
+.table-popup td {
+    border: 1px solid #333
+}
+
+.button-create {
+    padding: 10px 30px;
+    border: none;
+    background: #1cca64;
+    color: #fff
+}
+
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    justify-content: center;
+}
+
+.page-item:first-child .page-link,
+.pagination .page-number:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.pagination li a {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+}
+
+.page-item.active .page-link,
+.pagination .active.page-number .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #3f6ad8;
+    border-color: #007bff;
 }
