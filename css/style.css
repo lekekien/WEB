@@ -4,7 +4,8 @@ body {
 }
 
 .wrapper {
-    width: 950px;
+    /* width: 950px; */
+    width: 100%;
     margin: 0 auto;
     border: 2px solid #ccc;
     box-shadow: #666;
@@ -20,9 +21,24 @@ body {
 div#menu {
     height: 46px;
     padding-left: 6px;
-    background: url("../images/left.png") no-repeat;
+    background: #cfdcff;
+    /* background: url("../images/left.png") no-repeat; */
     top: -10px;
-    margin: 0 auto
+    margin: 0 auto;
+    position: relative;
+}
+
+div#menu .map-link {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    background: #3f6ad8;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    line-height: 15px;
+    height: auto;
+    margin-right: 0px;
 }
 
 div#menu ul {
@@ -34,7 +50,7 @@ div#menu ul {
 div#menu ul.menu {
     /* padding-right: 6px; */
     width: 100%;
-    background: url(../images/right.png) no-repeat right 0
+    /* background: url(../images/right.png) no-repeat right 0 */
 }
 
 div#menu li {
@@ -62,13 +78,19 @@ div#menu li div {
     width: 250px;
     margin: 0 0 0 -4px;
     padding: 0;
-    background: url(../images/subsubmenu-top.png) no-repeat 0 0;
+    /* background: url(../images/subsubmenu-top.png) no-repeat 0 0; */
+    background: #94a6d5;
+    border-radius: 5px;
+}
+
+div#menu li div span {
+    color: #fff
 }
 
 div#menu ul ul {
-    z-index: 12;
+    z-index: 99;
     padding: 0 4px 0 4px;
-    background: url(../images/submenu-bottom.png) no-repeat 0 bottom;
+    /* background: url(../images/submenu-bottom.png) no-repeat 0 bottom; */
     margin: 10px 0 0 0
 }
 
@@ -94,7 +116,7 @@ div#menu a {
 div#menu span {
     margin-top: 2px;
     padding-left: 15px;
-    color: #fff;
+    color: #333;
     font: normal 13px Helvetica, Arial, FreeSans, sans-serif;
     background: none;
     line-height: 50px;
@@ -115,17 +137,23 @@ div#menu a {
     text-transform: uppercase
 }
 
-div#menu a:hover {
-    background: url(../images/selected-right-sub.png) no-repeat right -1px
+div#menu a:hover span {
+    color: #fff
+    /* background: url(../images/selected-right-sub.png) no-repeat right -1px */
 }
 
 div#menu li.current a,
 div#menu ul.menu>li:hover>a {
-    background: url(../images/selected-right-sub.png) no-repeat right -1px
+    /* background: url(../images/selected-right-sub.png) no-repeat right -1px */
+    background: #94a6d5;
 }
 
 div#menu ul.menu>li:hover>a span {
-    color: #666
+    /* color: #fff */
+}
+
+div#menu ul.menu>li:hover>a span {
+    /* color: #666 */
 }
 
 div#menu li.last {
@@ -166,12 +194,12 @@ div#menu li.current ul a span {
 
 div#menu ul ul a:hover {
     background: none;
-    background-color: #3c3c3c
+    /* background-color: #3c3c3c */
 }
 
 div#menu ul ul a:hover span {
     background: none;
-    color: #07b3e1
+    color: rgb(18, 38, 44)
 }
 
 div#menu ul ul a.parent {
@@ -292,7 +320,8 @@ div#menu ul ul div li {
 }
 
 .news-block .block-title {
-    background: url(../images/news_cat_header.png) repeat-x;
+    /* background: url(../images/news_cat_header.png) repeat-x; */
+    background: #cfdcff;
     border-bottom: 0 solid #ccc;
 }
 
@@ -441,7 +470,8 @@ footer .info-foot .list-info li span {
     line-height: 28px;
     color: #555;
     text-indent: 10px;
-    background: url(../images/h3.header.jpg) no-repeat;
+    background: #cfdcff;
+    /* background: url(../images/h3.header.jpg) no-repeat; */
     margin-bottom: 20px;
 }
 

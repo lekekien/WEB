@@ -12,7 +12,8 @@ header.map-header {
 header.map-header .logo {}
 
 header.map-header .logo img {
-    width: 250px;
+    /* width: 250px; */
+    width: 100px;
     float: left;
 }
 
